@@ -15,6 +15,17 @@ public:
     Notepad(QWidget *parent = nullptr);
     ~Notepad();
 
+private slots:
+    void on_actionOpen_triggered();
+
+    void on_actionSave_triggered();
+
+    void on_actionSave_As_triggered();
+
+    void on_actionPrint_triggered();
+
+    void on_actionExit_triggered();
+
 private:
     Ui::Notepad *ui;
 };
