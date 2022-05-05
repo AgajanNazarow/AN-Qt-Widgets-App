@@ -16,6 +16,8 @@ public:
     ~Notepad();
 
 private slots:
+    void on_actionNew_triggered();
+
     void on_actionOpen_triggered();
 
     void on_actionSave_triggered();
@@ -28,5 +30,6 @@ private slots:
 
 private:
     Ui::Notepad *ui;
+    QString currentFile;
 };
 #endif // NOTEPAD_H
