@@ -80,11 +80,47 @@ void Notepad::on_actionSave_As_triggered()
 
 void Notepad::on_actionPrint_triggered()
 {
-
+    // not implemented.
 }
 
 void Notepad::on_actionExit_triggered()
 {
     QCoreApplication::quit();
+}
+
+
+void Notepad::on_actionSelect_Font_triggered()
+{
+
+}
+
+
+void Notepad::on_actionCopy_triggered()
+{
+
+}
+
+
+void Notepad::on_actionCut_triggered()
+{
+
+}
+
+
+void Notepad::on_actionPaste_triggered()
+{
+
+}
+
+
+void Notepad::on_actionUndo_triggered()
+{
+
+}
+
+
+void Notepad::on_actionRedo_triggered()
+{
+
 }
 
