@@ -4,6 +4,7 @@
 #include <QFileDialog>
 #include <QMessageBox>
 #include <QTextStream>
+#include <QFontDialog>
 
 Notepad::Notepad(QWidget *parent)
     : QMainWindow(parent)
@@ -91,36 +92,39 @@ void Notepad::on_actionExit_triggered()
 
 void Notepad::on_actionSelect_Font_triggered()
 {
-
+    bool fontSelected;
+    QFont font = QFontDialog::getFont(&fontSelected, this);
+    if (fontSelected)
+        ui->textEdit->setFont(font);
 }
 
 
 void Notepad::on_actionCopy_triggered()
 {
-
+    ui->textEdit->copy();
 }
 
 
 void Notepad::on_actionCut_triggered()
 {
-
+    ui->textEdit->cut();
 }
 
 
 void Notepad::on_actionPaste_triggered()
 {
-
+    ui->textEdit->paste();
 }
 
 
 void Notepad::on_actionUndo_triggered()
 {
-
+    ui->textEdit->undo();
 }
 
 
 void Notepad::on_actionRedo_triggered()
 {
-
+    ui->textEdit->redo();
 }
 
